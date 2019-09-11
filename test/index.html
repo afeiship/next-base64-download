@@ -28,8 +28,8 @@
       />
     </div>
     <script>
-      var ctr = document.getElementById('ctr');
-      var img = document.querySelector('img');
+      const ctr = document.getElementById('ctr');
+      const img = document.querySelector('img');
       ctr.onclick = function(params) {
         nx.base64Download({
           b64: img.src,

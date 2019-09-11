@@ -8,5 +8,13 @@ npm install -S afeiship/next-base64-download --registry=https://registry.npm.tao
 
 ## usage
 ```js
-//DOCS here!
+const ctr = document.getElementById('ctr');
+const img = document.querySelector('img');
+
+ctr.onclick = function(params) {
+  nx.base64Download({
+    b64: img.src,
+    filename: 'your-name.png'
+  });
+};
 ```
